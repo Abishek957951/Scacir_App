@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Traducir.procesarTraducir"
+    android:background="@android:color/transparent">
+
+    <EditText
+        android:id="@+id/textoEtiquetas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="210dp"
+        android:background="@color/white"
+        android:hint="Escribe aquí la lista de valores"
+        android:padding="16dp"
+        android:textColorHint="@color/primario"
+        android:textSize="20sp"
+        android:fontFamily="sans-serif-medium"/>
+
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:padding="6dp"
+        android:text="Continuar>>>>>>>"
+        android:textSize="35sp"
+        android:textColor="@color/primario"
+        android:background="@color/botones"/>
+
+    <Button
+        android:id="@+id/buttonProcesar"
+        android:layout_width="216dp"
+        android:layout_height="216dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="350dp"
+        android:background="@drawable/baseline_build_24"
+        android:onClick="procesar"/>
+
+    <FrameLayout
+        android:id="@+id/progressBarContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#CC000000"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="236dp"
+            android:layout_height="220dp"
+            android:layout_gravity="center"
+            android:indeterminate="true" />
+
+    </FrameLayout>
+
+
+</RelativeLayout>

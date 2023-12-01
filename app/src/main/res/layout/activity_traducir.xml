@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Traducir.TraducirActivity"
+    android:background="@drawable/fondocamara">
+
+
+
+    <Button
+        android:id="@+id/salir"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="20dp"
+        android:layout_weight="1"
+        android:backgroundTint="@color/botones"
+        android:padding="2dp"
+        android:scaleType="centerInside"
+        android:text="Salir"
+        android:textColor="@color/primario"
+        android:textSize="28sp"
+        android:onClick="onGoToSalir"/>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/salir"
+        android:id="@+id/view_pager"
+        />
+
+</RelativeLayout>

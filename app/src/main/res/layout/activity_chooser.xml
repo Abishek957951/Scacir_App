@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondoentrada"
+    tools:context=".Chooser.ChooserActivity">
+
+    <!-- Back Button -->
+
+    <!-- Panel 1 -->
+
+    <!-- Panel 2 -->
+
+    <LinearLayout
+        android:id="@+id/panel1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/backButton"
+        android:layout_marginTop="90dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <!-- Image View -->
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="0dp"
+            android:layout_height="170dp"
+            android:layout_weight="1"
+            android:background="@drawable/traducir" />
+
+        <!-- Text -->
+        <LinearLayout
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_weight="1"
+                android:background="@drawable/round_corners"
+                android:gravity="center_vertical"
+                android:justificationMode="inter_word"
+                android:text="Tómale foto a tu circuito
+                montado en protoboard para poder traducirlo
+                a su esquema eléctrico equivalente"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/buttonTraducir"
+                android:layout_width="160dp"
+                android:layout_height="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/botones"
+                android:elevation="4dp"
+                android:padding="1dp"
+                android:scaleType="centerInside"
+                android:text="Continuar"
+                android:textColor="@color/primario"
+                android:textSize="28sp"
+                android:onClick="onGoToTraducir"/>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/panel2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/panel1"
+        android:layout_marginTop="150dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <!-- Image View -->
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="0dp"
+            android:layout_height="170dp"
+            android:layout_weight="1"
+            android:background="@drawable/comparar" />
+
+        <LinearLayout
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_weight="1"
+                android:background="@drawable/round_corners"
+                android:gravity="center_vertical"
+                android:justificationMode="inter_word"
+                android:text="Si tienes dos circuitos montados en
+                protoboard y quieres saber si son iguales, tomales foto
+                y compruebalo"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/buttonComparar"
+                android:layout_width="160dp"
+                android:layout_height="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/botones"
+                android:elevation="4dp"
+                android:padding="1dp"
+                android:scaleType="centerInside"
+                android:text="Continuar"
+                android:textColor="@color/primario"
+                android:textSize="28sp"
+                android:onClick="onGoToComparar"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="70dp"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="278dp"
+        android:backgroundTint="@color/botones"
+        android:elevation="4dp"
+        android:padding="8dp"
+        android:scaleType="centerInside"
+        android:text="Volver"
+        android:textColor="@color/primario"
+        android:textSize="20sp"
+        android:onClick="onGoToVolver"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Traducir.escogerTraducir"
+    android:background="@android:color/transparent">
+
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:padding="6dp"
+        android:text="Continuar>>>>>>>"
+        android:textSize="35sp"
+        android:textColor="@color/primario"
+        android:background="@color/botones"/>
+
+    <Button
+        android:id="@+id/buttonCamera"
+        android:layout_width="216dp"
+        android:layout_height="216dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp"
+        android:background="@drawable/baseline_camera_alt_24"
+        android:onClick="tomarFoto"/>
+
+    <Button
+        android:id="@+id/buttonGaleria"
+        android:layout_width="216dp"
+        android:layout_height="216dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="360dp"
+        android:background="@drawable/baseline_insert_photo_24"
+        android:onClick="tomarGaleria"/>
+
+
+</RelativeLayout>
